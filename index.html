@@ -1,554 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The B.B.C. - Daby</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            background-color: #141414;
-            font-family: 'Inter', sans-serif;
-            color: #e5e5e5;
-        }
+<!-- NEW SECTION: LAST-MINUTE CHANGES & UNEXPECTED SITUATIONS -->
+<section class="expression-block bg-card mb-12">
+    <h3 class="expression-title">⚡ Section: "I Did Not See That Coming" - Last-Minute Changes</h3>
 
-        .text-netflix-red {
-            color: #e50914;
-        }
-
-        .bg-netflix-dark {
-            background-color: #141414;
-        }
-
-        .bg-card {
-            background-color: #222222;
-        }
-        
-        .font-bebas {
-            font-family: 'Bebas Neue', sans-serif;
-        }
-
-        /* Netflix-like scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #222222;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #555555;
-            border-radius: 4px;
-        }
-
-        .expression-block {
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-
-        .expression-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #e50914;
-            margin-bottom: 0.5rem;
-        }
-
-        .expression-text {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #fde047;
-            margin-top: 1rem;
-        }
-
-        /* Drag and Drop styles */
-        .drag-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-            min-height: 2.5rem;
-        }
-
-        .draggable-word {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            cursor: grab;
-            transition: background-color 0.2s ease, transform 0.2s ease;
-        }
-
-        .draggable-word:active {
-            cursor: grabbing;
-        }
-
-        .drop-zone {
-            min-height: 2.5rem;
-            border: 2px dashed #444;
-            border-radius: 0.5rem;
-            padding: 0.5rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            align-items: center;
-        }
-
-        .drop-zone.drag-over {
-            border-color: #e50914;
-            background-color: #333;
-        }
-
-        .feedback {
-            margin-top: 0.5rem;
-            font-weight: 600;
-            display: none; /* Initially hidden */
-        }
-
-        .correct {
-            color: #16a34a; /* Green */
-        }
-
-        .incorrect {
-            color: #dc2626; /* Red */
-        }
-    </style>
-</head>
-<body class="bg-netflix-dark">
-    <div class="relative w-full h-full min-h-screen">
-        <!-- Header Section -->
-        <header class="p-6 md:p-8 flex items-center justify-between">
-            <h1 class="font-bebas text-4xl md:text-5xl text-netflix-red leading-none">Brazilian Business Communication</h1>
-            <nav>
-                <!-- Empty for Netflix-style look -->
-            </nav>
-        </header>
-
-        <!-- Main Content Area -->
-        <main class="p-6 md:p-8 max-w-4xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-semibold mb-6">Learn to communicate like a native.</h2>
-            <p class="mb-12 text-lg">
-                The method is the **"Lego-block"** approach, where each phrase and expression is a block that fits into another, creating a professional and seamless structure.
-            </p>
-            
-            <!-- Lessons Section - Redesigned for line-by-line flow -->
-            <section class="space-y-12">
-                <div class="expression-block bg-card">
-                    <h3 class="expression-title">The First Block: The Soft Touch</h3>
-                    <p class="text-lg">
-                        Always start with a polite introduction. The phrase **"I am afraid..."** (Infelizmente...) is the opening block.
-                    </p>
-                    <p class="expression-text">I am afraid...</p>
-                    <p class="text-sm mt-2">
-                        This phrase doesn't mean "I'm scared"! It's a very polite way to deliver bad news, like "I'm sorry, but..." or "Unfortunately...". Using it shows respect and professionalism.
-                    </p>
-                </div>
-
-                <div class="expression-block bg-card">
-                    <h3 class="expression-title">The Second Block: The Empathetic Refusal</h3>
-                    <p class="text-lg">
-                        The next step is to be direct and clear about what you can't do. The phrase **"...I can't make it"** (Não vou conseguir) is perfect for this.
-                    </p>
-                    <p class="expression-text">I can't make it.</p>
-                    <p class="text-sm mt-2">
-                        This is the professional way to say "I can't go," "I can't attend," or "I won't be able to." It is much more polite than just "I can't go." or "I'm busy."
-                    </p>
-                </div>
-                
-                <div class="expression-block bg-card">
-                    <h3 class="expression-title">The Third Block: The Professional Justification</h3>
-                    <p class="text-lg">
-                        Natives appreciate it when you give a brief and clear reason. The phrases **"I have a prior commitment"** (Tenho um compromisso pré-existente) or **"I am double-booked"** (Tenho dois compromissos no mesmo horário) are ideal.
-                    </p>
-                    <p class="expression-text">I have a prior commitment. / I am double-booked.</p>
-                    <p class="text-sm mt-2">
-                        The first means you already have a scheduled engagement. The second, slightly more informal but still professional, means your calendar has two events at the same time. Both are better than the vague "I'm busy."
-                    </p>
-                </div>
-
-                <div class="expression-block bg-card">
-                    <h3 class="expression-title">The Fourth Block: The Unforeseen Event</h3>
-                    <p class="text-lg">
-                        For those last-minute moments, use these phrases as justification. The main concept to remember is **(Something just came up)** (Algo de última hora surgiu).
-                    </p>
-                    <div class="expression-text">
-                        <ul class="list-none space-y-2">
-                            <li>👉 Something urgent just popped up.</li>
-                            <li>👉 Something unexpected just came up.</li>
-                            <li>� A critical issue just arose.</li>
-                        </ul>
-                    </div>
-                    <p class="text-sm mt-2">
-                        All these phrases mean that something unexpected and important has happened, and you need to deal with it immediately. It's a professional and polite way to communicate an unforeseen event.
-                    </p>
-                </div>
-
-                <div class="expression-block bg-card">
-                    <h3 class="expression-title">The Fifth Block: The Solution</h3>
-                    <p class="text-lg">
-                        Don't just decline, offer an alternative. The solution can be one of two forms:
-                    </p>
-                    
-                    <h4 class="expression-title mt-4">👉  "May I take a rain check?" (Podemos deixar para outro dia?)</h4>
-                    <p class="text-sm mt-2">
-                        This phrase, which literally means "can I get a ticket for a rainy day?", is a very common idiom to propose postponing an engagement to an undefined future date.
-                    </p>
-
-                    <h4 class="expression-title mt-4">👉 "Would you mind if we reschedule?" (Você se importaria se remarcássemos?)</h4>
-                    <p class="text-sm mt-2">
-                        This is a direct and polite question that immediately suggests rescheduling the commitment for a new day and time, showing that you are still committed.
-                    </p>
-                </div>
-
-                <div class="expression-block bg-card">
-                    <h3 class="expression-title">The Sixth Block: The Empathy</h3>
-                    <p class="text-lg">
-                        Adding a sincere apology shows that you care about the other person's schedule. Use **"I am sorry."** (Sinto muito).
-                    </p>
-                    <p class="expression-text">I am sorry.</p>
-                    <p class="text-sm mt-2">
-                        Although "I am afraid" already has a touch of apology, adding "I am sorry" to the beginning of the complete sentence demonstrates even more politeness and empathy, which is highly valued in the American workplace.
-                    </p>
-                </div>
-
-                <div class="expression-block bg-card">
-                    <h3 class="expression-title">The Seventh Block: The Rescheduling Proposal</h3>
-                    <p class="text-lg">
-                        You can use questions to make proposals in a more informal and friendly, but still professional, way.
-                    </p>
-                    
-                    <h4 class="expression-title mt-4">👉 "How about...?" (Que tal...?)</h4>
-                    <p class="text-sm mt-2">
-                        This expression is ideal for suggesting a date or time in a friendly manner. For example: "**How about** Thursday at 3 PM?".
-                    </p>
-
-                    <h4 class="expression-title mt-4">👉 "How's that for...?" (O que acha de...?)</h4>
-                    <p class="text-sm mt-2">
-                        A great way to offer an alternative and ask for the other person's opinion. Example: "I can do next Tuesday, **how's that for** a new time?".
-                    </p>
-
-                    <h4 class="expression-title mt-4">👉 "Would tomorrow work for you?" (Amanhã daria certo para você?)</h4>
-                    <p class="text-sm mt-2">
-                        Another direct and polite alternative for checking someone's availability.
-                    </p>
-                </div>
-                
-                <div class="expression-block bg-card">
-                    <h3 class="expression-title">The Eighth Block: The Confirmation</h3>
-                    <p class="text-lg">
-                        Unlike "I can't make it," these phrases are for confirming your attendance in a clear and positive way.
-                    </p>
-                    
-                    <h4 class="expression-title mt-4">👉 "I can make it." (Eu consigo ir)</h4>
-                    <p class="text-sm mt-2">
-                        This is the direct and most common confirmation, used to say "I can go" or "I will be able to."
-                    </p>
-
-                    <h4 class="expression-title mt-4">👉 "I'll be there." (Estarei lá)</h4>
-                    <p class="text-sm mt-2">
-                        A little more casual and emphatic, it means "I will be there" and conveys a strong intention to attend.
-                    </p>
-
-                    <h4 class="expression-title mt-4">👉 "Looking forward to it!" (Estou ansioso por isso!)</h4>
-                    <p class="text-sm mt-2">
-                        This phrase not only confirms your presence but also expresses enthusiasm. It's ideal for social events, happy hours, or any enjoyable gathering.
-                    </p>
-                    
-                    <h4 class="expression-title mt-4">👉 "See you there!" (A gente se vê lá!)</h4>
-                    <p class="text-sm mt-2">
-                        A casual and friendly phrase used to confirm that you will be present and are excited about the idea. It's a common goodbye for informal get-togethers.
-                    </p>
-                </div>
-                
-                <!-- New Section: Situations at work -->
-                <div class="expression-block bg-card">
-                    <h3 class="expression-title">Situations at Work</h3>
-                    <p class="text-lg">
-                        Here are some examples of how to combine the blocks in common day-to-day office situations.
-                    </p>
-                    
-                    <div class="mt-4">
-                        <h4 class="expression-title mt-4">
-                            Important Note:
-                        </h4>
-                        <p class="text-white text-lg mt-2">
-                            The key to effective communication is not a literal translation. Notice how the Portuguese and English phrases, despite having different structures, convey the same intention. Instead of translating word for word, focus on learning the language "block" that expresses the desired idea in a natural and professional way.
-                        </p>
-                    </div>
-                    
-                    <div class="mt-4">
-                        <h4 class="expression-title mt-4">
-                            Declining a last-minute commitment:
-                        </h4>
-                        <p class="text-white text-lg mt-2">
-                            Shoot, I have to cancel lunch today. I'm sorry, but something urgent just came up with my project. I can't make it.
-                            <br>
-                            👉 <span class="text-yellow-400 font-bold">"I'm sorry, I'm afraid I can't make it. Something urgent just came up. Would you mind if we reschedule for tomorrow?"</span>
-                        </p>
-                        <p class="text-white text-lg mt-4">
-                            Dude, I won't be able to make it to the alignment meeting today. We can talk tomorrow, right? Please?
-                            <br>
-                            👉 <span class="text-yellow-400 font-bold">"I'm afraid I can't make it to the alignment meeting today. How about we catch up on the project tomorrow?"</span>
-                        </p>
-                    </div>
-
-                    <div class="mt-4">
-                        <h4 class="expression-title mt-4">
-                            Declining and proposing a new date:
-                        </h4>
-                        <p class="text-white text-lg mt-2">
-                            I won't be able to attend the agenda meeting right now. My calendar is packed. How about we talk tomorrow?
-                            <br>
-                            👉 <span class="text-yellow-400 font-bold">"I have a prior commitment, so I'm afraid I can't make it. How about we meet tomorrow instead?"</span>
-                        </p>
-                        <p class="text-white text-lg mt-4">
-                            I can't come to your desk to review the document today. I'm in the middle of a super important call. Can we do this later, like, after 3 PM?
-                            <br>
-                            👉 <span class="text-yellow-400 font-bold">"I'm afraid I can't come to your desk to review the document right now. I'm in the middle of a super important call. Would you mind if we reschedule for later, how about after 3 PM?"</span>
-                        </p>
-                    </div>
-
-                    <div class="mt-4">
-                        <h4 class="expression-title mt-4">
-                            Confirming attendance at an event:
-                        </h4>
-                        <p class="text-white text-lg mt-2">
-                            What great news! I can attend the event. I'll be there to support the team and meet everyone.
-                            <br>
-                            👉 <span class="text-yellow-400 font-bold">"I can make it! I'll be there to support the team. I'm really looking forward to it!"</span>
-                        </p>
-                        <p class="text-white text-lg mt-4">
-                            Hey everyone, great! I got the happy hour invitation. I'm definitely going! Let's do it!
-                            <br>
-                            👉 <span class="text-yellow-400 font-bold">"Hey team, thanks for the invite to the happy hour! I can make it. Looking forward to it!"</span>
-                        </p>
-                    </div>
-
-                    <div class="mt-4">
-                        <h4 class="expression-title mt-4">
-                            Asking for help with a task:
-                        </h4>
-                        <p class="text-white text-lg mt-2">
-                            Hey, what's up? Can you give me a hand with this presentation? I'm swamped.
-                            <br>
-                            👉 <span class="text-yellow-400 font-bold">"Hey, would you mind lending me a hand with this presentation? I'm swamped."</span>
-                        </p>
-                    </div>
-
-                    <div class="mt-4">
-                        <h4 class="expression-title mt-4">
-                            Following up on an email:
-                        </h4>
-                        <p class="text-white text-lg mt-2">
-                            Hi, how are you? Just wanted to know if you managed to see my message. Can we talk about the project status?
-                            <br>
-                            👉 <span class="text-yellow-400 font-bold">"Hi, I hope you're doing well. Just wanted to follow up on my last email. Can we connect to discuss the project status?"</span>
-                        </p>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!-- New Section: Drag and Drop Exercises -->
-            <section class="space-y-12 mt-12">
-                <div class="expression-block bg-card">
-                    <h3 class="expression-title">Exercises: Drag and Drop</h3>
-                    <p class="text-lg">
-                        Drag the word blocks to the box below and build the correct translation.
-                    </p>
-
-                    <div id="exercise-container" class="mt-6">
-                        <!-- Exercises will be dynamically inserted here -->
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer Section -->
-        <footer class="p-6 text-center text-sm text-gray-500">
-            <p>&copy; 2025 Brazilian Business Communication - Created by Daby. All rights reserved.</p>
-        </footer>
+    <div class="last-minute-intro">
+        <h4 class="text-2xl font-bold text-center text-orange-300 mb-4">How to Handle Unexpected Situations Professionally</h4>
+        <p class="text-center">Last-minute changes happen to everyone. The key is communicating them professionally without sounding unprepared or disrespectful.</p>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const exercises = [
-                {
-                    portuguese: "Unfortunately, I won't be able to attend the meeting tomorrow.",
-                    englishBlocks: ["I'm afraid", "I won't be able to", "make it to the", "meeting tomorrow."]
-                },
-                {
-                    portuguese: "I'm sorry, but I already have a commitment for that time.",
-                    englishBlocks: ["I'm sorry,", "but I have", "a prior commitment", "for that time."]
-                },
-                {
-                    portuguese: "My apologies, something urgent came up and I won't be able to go.",
-                    englishBlocks: ["My apologies,", "something urgent", "just came up", "and I won't be able", "to attend."]
-                },
-                {
-                    portuguese: "How about we reschedule our chat?",
-                    englishBlocks: ["How about", "we reschedule", "our chat?"]
-                },
-                {
-                    portuguese: "Would you mind if we postponed for another day?",
-                    englishBlocks: ["Would you mind", "if we took", "a rain check?"]
-                },
-                {
-                    portuguese: "I was wondering if Wednesday would work for you.",
-                    englishBlocks: ["I was wondering", "if Wednesday", "would work", "for you."]
-                },
-                {
-                    portuguese: "I can attend the call tomorrow.",
-                    englishBlocks: ["I can make it", "to the call", "tomorrow."]
-                },
-                {
-                    portuguese: "I'll be there, I can't wait!",
-                    englishBlocks: ["I'll be there,", "I'm looking forward", "to it!"]
-                },
-                {
-                    portuguese: "I'm definitely going. See you there!",
-                    englishBlocks: ["I'll definitely go.", "See you there!"]
-                },
-                {
-                    portuguese: "I'm sorry, my schedule is packed today.",
-                    englishBlocks: ["I'm sorry,", "I'm double-booked", "today."]
-                },
-                {
-                    portuguese: "A critical issue arose, and I won't be able to join you.",
-                    englishBlocks: ["A critical issue", "just arose,", "and I won't be able", "to join you."]
-                },
-                {
-                    portuguese: "I'd love to, but I won't be able to make the happy hour.",
-                    englishBlocks: ["I'd love to,", "but I won't be", "able to make", "the happy hour."]
-                },
-                {
-                    portuguese: "Would you give me a hand with this report?",
-                    englishBlocks: ["Would you mind", "lending me a hand", "with this report?"]
-                },
-                {
-                    portuguese: "I just wanted to follow up on the email I sent you last week.",
-                    englishBlocks: ["Just wanted to", "follow up on", "the email", "I sent you", "last week."]
-                },
-                {
-                    portuguese: "Can we connect to talk about the project status?",
-                    englishBlocks: ["Can we connect", "to discuss", "the project status?"]
-                }
-            ];
+    <!-- KEY PHRASES FOR LAST-MINUTE SITUATIONS -->
+    <div class="key-phrases-box">
+        <h4 class="text-xl font-bold text-blue-400 mb-4">Essential Phrases for Last-Minute Situations</h4>
 
-            const exerciseContainer = document.getElementById('exercise-container');
-            let draggedItem = null; // Variable to store the dragged element
+        <div class="phrase-grid">
+            <div class="phrase-item">
+                <p class="font-bold text-green-400">For Meetings/Events:</p>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>"Something just came up"</li>
+                    <li>"An urgent matter has popped up"</li>
+                    <li>"A last-minute issue has arisen"</li>
+                    <li>"An unexpected situation requires my attention"</li>
+                </ul>
+            </div>
 
-            function shuffleArray(array) {
-                for (let i = array.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [array[i], array[j]] = [array[j], array[i]];
-                }
-                return array;
-            }
+            <div class="phrase-item">
+                <p class="font-bold text-yellow-400">Portuguese Equivalents:</p>
+                <ul class="list-disc pl-4 text-sm space-y-1">
+                    <li>"Algo de última hora surgiu"</li>
+                    <li>"Uma questão urgente apareceu"</li>
+                    <li>"Um problema de última hora surgiu"</li>
+                    <li>"Uma situação inesperada requer minha atenção"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-            function setupExercise(exerciseDiv) {
-                const exerciseId = parseInt(exerciseDiv.getAttribute('data-id'));
-                const exercise = exercises[exerciseId];
-                const dropZone = exerciseDiv.querySelector('.drop-zone');
-                const dragContainer = exerciseDiv.querySelector('.drag-container');
-                const feedback = exerciseDiv.querySelector('.feedback');
-                const checkBtn = exerciseDiv.querySelector('.check-btn');
-                const resetBtn = exerciseDiv.querySelector('.reset-btn');
+    <!-- WHEN TO USE EACH PHRASE -->
+    <div class="subsection">
+        <h4 class="subsection-title">Choosing the Right Phrase for the Situation</h4>
 
-                // Clear containers
-                dropZone.innerHTML = '';
-                dragContainer.innerHTML = '';
-                
-                // Shuffle and render words
-                const scrambledBlocks = shuffleArray([...exercise.englishBlocks]);
-                scrambledBlocks.forEach(block => {
-                    const wordDiv = document.createElement('div');
-                    wordDiv.className = 'draggable-word';
-                    wordDiv.setAttribute('draggable', 'true');
-                    wordDiv.textContent = block;
-                    dragContainer.appendChild(wordDiv);
-                });
-                
-                // Event listeners
-                const draggableWords = dragContainer.querySelectorAll('.draggable-word');
-                draggableWords.forEach(word => {
-                    word.addEventListener('dragstart', (e) => {
-                        draggedItem = e.target; // Store the reference to the dragged element
-                        e.dataTransfer.effectAllowed = 'move';
-                        setTimeout(() => e.target.classList.add('opacity-50'), 0);
-                    });
-                    word.addEventListener('dragend', (e) => {
-                        e.target.classList.remove('opacity-50');
-                        draggedItem = null; // Clear the reference
-                    });
-                });
+        <div class="situation-guide">
+            <div class="situation-item">
+                <div class="situation-header">
+                    <p class="font-bold text-green-400">Situation 1: Minor Last-Minute Change</p>
+                </div>
+                <div class="situation-content">
+                    <p class="text-sm"><strong>Example:</strong> You need to leave a meeting 15 minutes early</p>
+                    <p class="text-green-400">✅ Use: "Something just came up that I need to attend to."</p>
+                    <p class="text-xs">Appropriate for: Internal team meetings, informal situations</p>
+                </div>
+            </div>
 
-                dropZone.addEventListener('dragover', (e) => {
-                    e.preventDefault();
-                    e.dataTransfer.dropEffect = 'move';
-                    dropZone.classList.add('drag-over');
-                });
-                dropZone.addEventListener('dragleave', (e) => {
-                    dropZone.classList.remove('drag-over');
-                });
-                dropZone.addEventListener('drop', (e) => {
-                    e.preventDefault();
-                    dropZone.classList.remove('drag-over');
-                    // Use the stored reference to the dragged element
-                    if (draggedItem && !dropZone.contains(draggedItem)) {
-                        dropZone.appendChild(draggedItem);
-                    }
-                });
+            <div class="situation-item">
+                <div class="situation-header">
+                    <p class="font-bold text-orange-400">Situation 2: Moderate Priority Change</p>
+                </div>
+                <div class="situation-content">
+                    <p class="text-sm"><strong>Example:</strong> You can't attend a scheduled client call</p>
+                    <p class="text-green-400">✅ Use: "An urgent matter has come up that requires my immediate attention."</p>
+                    <p class="text-xs">Appropriate for: Client meetings, important internal meetings</p>
+                </div>
+            </div>
 
-                checkBtn.addEventListener('click', () => {
-                    const droppedWords = Array.from(dropZone.children).map(child => child.textContent.trim());
-                    const userSentence = droppedWords.join(' ');
-                    const correctSentence = exercise.englishBlocks.join(' ');
-                    
-                    if (userSentence === correctSentence) {
-                        feedback.textContent = "Great job! The answer is correct!";
-                        feedback.className = 'feedback correct';
-                    } else {
-                        feedback.textContent = "Oops, please try again. The order is incorrect.";
-                        feedback.className = 'feedback incorrect';
-                    }
-                    feedback.style.display = 'block';
-                });
+            <div class="situation-item">
+                <div class="situation-header">
+                    <p class="font-bold text-red-400">Situation 3: High Priority Emergency</p>
+                </div>
+                <div class="situation-content">
+                    <p class="text-sm"><strong>Example:</strong> System outage requiring your expertise</p>
+                    <p class="text-green-400">✅ Use: "A critical issue has arisen that I need to address immediately."</p>
+                    <p class="text-xs">Appropriate for: True emergencies, system failures, urgent client issues</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                resetBtn.addEventListener('click', () => {
-                    setupExercise(exerciseDiv);
-                    feedback.style.display = 'none';
-                });
-            }
+    <!-- PROFESSIONAL STRUCTURE FOR LAST-MINUTE COMMUNICATION -->
+    <div class="structure-guide">
+        <h4 class="text-xl font-bold text-purple-400 mb-4">Professional Structure for Last-Minute Changes</h4>
 
-            function renderAllExercises() {
-                exercises.forEach((exercise, index) => {
-                    const exerciseDiv = document.createElement('div');
-                    exerciseDiv.className = 'bg-card p-6 rounded-lg shadow-lg mb-8';
-                    exerciseDiv.setAttribute('data-id', index);
-                    
-                    exerciseDiv.innerHTML = `
-                        <p class="text-xl font-bold text-gray-300 mb-4">${index + 1}. ${exercise.portuguese}</p>
-                        <div class="drop-zone border-2 border-dashed border-gray-600 rounded-lg p-4 mb-4" data-id="${index}"></div>
-                        <div class="drag-container" data-id="${index}"></div>
-                        <div class="flex space-x-4 mt-4">
-                            <button class="check-btn bg-yellow-500 text-black font-semibold py-2 px-4 rounded-lg hover:bg-yellow-600 transition-colors duration-200">Check</button>
-                            <button class="reset-btn bg-gray-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-600 transition-colors duration-200">Reset</button>
-                        </div>
-                        <div class="feedback mt-2"></div>
-                    `;
-                    exerciseContainer.appendChild(exerciseDiv);
-                    setupExercise(exerciseDiv);
-                });
-            }
+        <div class="structure-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <p class="font-bold">Start with Regret/Apology</p>
+                <p>"I'm afraid..." or "I'm sorry, but..."</p>
+                <p class="text-xs">Sets the tone and shows respect</p>
+            </div>
+        </div>
 
-            renderAllExercises();
-        });
-    </script>
-</body>
-</html>
-�
+        <div class="structure-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <p class="font-bold">State the Situation Clearly</p>
+                <p>"Something urgent has come up"</p>
+                <p class="text-xs">Be specific about the nature if appropriate</p>
+            </div>
+        </div>
+
+        <div class="structure-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <p class="font-bold">Explain the Impact</p>
+                <p>"...so I won't be able to make it to our meeting."</p>
+                <p class="text-xs">Connect the situation to the specific commitment</p>
+            </div>
+        </div>
+
+        <div class="structure-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <p class="font-bold">Offer a Solution</p>
+                <p>"Can we reschedule for tomorrow?" or "May I take a rain check?"</p>
+                <p class="text-xs">Shows you're still committed to the relationship</p>
+            </div>
+        </div>
+
+        <div class="structure-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <p class="font-bold">Express Appreciation</p>
+                <p>"Thank you for your understanding."</p>
+                <p class="text-xs">Maintains positive relationship</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMPLETE EXAMPLES -->
+    <div class="example-section">
+        <h4 class="text-xl font-bold text-teal-400 mb-4">Complete Examples: From Brazilian Thought to Professional English</h4>
+
+        <div class="example-item">
+            <p class="font-bold text-yellow-400">Situation: Last-minute team meeting conflict</p>
+            <p class="portuguese-thought">💭 Brazilian Thought: "Poxa, acabou de surgir uma reunião urgente com o diretor. Não vou conseguir ir na nossa call."</p>
+            <p class="english-answer">✅ Professional English: "I'm afraid something urgent just came up - I have a last-minute meeting with the director. I won't be able to make it to our call. Can we reschedule for later today?"</p>
+        </div>
+
+        <div class="example-item">
+            <p class="font-bold text-yellow-400">Situation: Unexpected technical issue</p>
+            <p class="portuguese-thought">💭 Brazilian Thought: "O sistema do cliente caiu, preciso resolver agora. Não vou conseguir participar da apresentação."</p>
+            <p class="english-answer">✅ Professional English: "I'm sorry, but a critical issue has arisen - the client's system is down and requires my immediate attention. I won't be able to join the presentation. Could someone cover for me?"</p>
+        </div>
+
+        <div class="example-item">
+            <p class="font-bold text-yellow-400">Situation: Personal emergency</p>
+            <p class="portuguese-thought">💭 Brazilian Thought: "Apareceu um problema pessoal que preciso resolver. Não vou conseguir ir no almoço."</p>
+            <p class="english-answer">✅ Professional English: "I'm afraid a personal matter has come up that I need to attend to. I won't be able to make it to lunch. May I take a rain check?"</p>
+        </div>
+    </div>
+
+    <!-- WHAT TO AVOID -->
+    <div class="avoid-section">
+        <h4 class="text-xl font-bold text-red-400 mb-4">🚫 What Brazilian Professionals Should Avoid</h4>
+
+        <div class="avoid-grid">
+            <div class="avoid-item">
+                <p class="font-bold text-yellow-400">Avoid Being Too Vague:</p>
+                <p class="text-sm">❌ "Algo apareceu" → "Something appeared"</p>
+                <p class="text-green-400">✅ Better: "Something urgent has come up"</p>
+            </div>
+
+            <div class="avoid-item">
+                <p class="font-bold text-yellow-400">Avoid Being Too Casual:</p>
+                <p class="text-sm">❌ "Deu ruim aqui" → "Things went bad here"</p>
+                <p class="text-green-400">✅ Better: "An unexpected issue has arisen"</p>
+            </div>
+
+            <div class="avoid-item">
+                <p class="font-bold text-yellow-400">Avoid No Explanation:</p>
+                <p class="text-sm">❌ "Não vou conseguir" → "I won't be able to" (no reason)</p>
+                <p class="text-green-400">✅ Better: "I won't be able to make it due to an urgent matter"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CULTURAL INSIGHT -->
+    <div class="cultural-insight">
+        <h4 class="text-xl font-bold text-center text-blue-300 mb-4">🎯 Cultural Insight: Brazilian vs. International Expectations</h4>
+
+        <div class="insight-content">
+            <p><strong>In Brazilian Portuguese:</strong> It's common to say "algo surgiu" or "deu ruim" in informal work settings. Colleagues often understand the context without detailed explanation.</p>
+
+            <p class="mt-2"><strong>In International Business English:</strong> Colleagues expect a brief, professional explanation. Being too vague can seem evasive or unprofessional. Always add enough context to show it's legitimate.</p>
+
+            <div class="teacher-note mt-4">
+                <p class="font-bold">Rule of Thumb:</p>
+                <p>When communicating last-minute changes in English, always use professional phrases like "something has come up" or "an urgent matter has arisen" instead of casual Brazilian expressions. Add just enough detail to show legitimacy without oversharing.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUICK REFERENCE -->
+    <div class="quick-reference">
+        <h4 class="text-xl font-bold text-purple-400 mb-4">📝 Quick Reference: Last-Minute Phrases</h4>
+
+        <div class="reference-table">
+            <table class="w-full">
+                <thead>
+                    <tr class="bg-gray-800">
+                        <th class="p-3 text-left text-yellow-400">Situation</th>
+                        <th class="p-3 text-left text-green-400">Professional Phrase</th>
+                        <th class="p-3 text-left text-blue-400">Level of Formality</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-gray-700">
+                        <td class="p-3">Minor change</td>
+                        <td class="p-3">"Something just came up"</td>
+                        <td class="p-3">Casual-Professional</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="p-3">Moderate priority</td>
+                        <td class="p-3">"An urgent matter has arisen"</td>
+                        <td class="p-3">Professional</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="p-3">Client emergency</td>
+                        <td class="p-3">"A critical issue requires immediate attention"</td>
+                        <td class="p-3">Very Professional</td>
+                    </tr>
+                    <tr>
+                        <td class="p-3">Personal matter</td>
+                        <td class="p-3">"A personal matter has come up"</td>
+                        <td class="p-3">Professional (respects privacy)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="teacher-note mt-6">
+        <p class="font-bold mb-2">Final Professional Tip:</p>
+        <p>For last-minute changes, <strong>communicate as soon as possible</strong>. Even a 5-minute heads-up is better than being late or missing without notice. Use the professional phrases above to maintain your reputation as someone who handles unexpected situations with grace and professionalism.</p>
+    </div>
+</section>
